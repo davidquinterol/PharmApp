@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Properties\areaDomis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\areaPQRS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\indexP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\inicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\pharmApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\registroDomis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\registroInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\registroPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\revisionDomis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Properties\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
