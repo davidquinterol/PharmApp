@@ -10,8 +10,7 @@ requiere para este sistema de manera inicial contar con un usuario y contraseña
 pueda validar el ingreso al sistema de una manera más ágil, posterior a ello necesita llevar un
 control más exhaustivo del inventario existente y los productos próximos a agotarse, así como el
 despacho correcto de domicilios y la recepción de sugerencias y quejas; por ello se requiere un
-sistema de información que permita atender las necesidades para las áreas de inventario y
-despachos; de esta información se deberán obtener los reportes correspondientes.
+sistema de información que permita atender las necesidades para las áreas de inventario, despachos y quejas.
 
 2. OBJETIVOS
    
