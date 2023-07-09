@@ -14,6 +14,7 @@ sistema de información que permita atender las necesidades para las áreas de i
 despachos; de esta información se deberán obtener los reportes correspondientes.
 
 2. OBJETIVOS
+   
 2.1. OBJETIVO GENERAL
 Atender las necesidades básicas de las áreas mencionadas anteriormente, logrando una mejora en la gestión de la información.
 
