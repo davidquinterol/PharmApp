@@ -1,17 +1,73 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\usuario\\Desktop\\Pharmapp_taller\\Pharmapp\\Pharmapp\\Pharmapp.csproj": {}
+    "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\Pharmapp\\Pharmapp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\usuario\\Desktop\\Pharmapp_taller\\Pharmapp\\Pharmapp\\Pharmapp.csproj": {
+    "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\CapaEntidad\\CapaEntidad.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\CapaEntidad\\CapaEntidad.csproj",
+        "projectName": "CapaEntidad",
+        "projectPath": "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\CapaEntidad\\CapaEntidad.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\ClassDatos\\CapaDatos.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\ClassDatos\\CapaDatos.csproj",
+        "projectName": "CapaDatos",
+        "projectPath": "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\ClassDatos\\CapaDatos.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\CapaEntidad\\CapaEntidad.csproj": {
+                "projectPath": "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\CapaEntidad\\CapaEntidad.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\ClassNegocio\\CapaNegocio.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\ClassNegocio\\CapaNegocio.csproj",
+        "projectName": "CapaNegocio",
+        "projectPath": "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\ClassNegocio\\CapaNegocio.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\CapaEntidad\\CapaEntidad.csproj": {
+                "projectPath": "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\CapaEntidad\\CapaEntidad.csproj"
+              },
+              "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\ClassDatos\\CapaDatos.csproj": {
+                "projectPath": "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\ClassDatos\\CapaDatos.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\Pharmapp\\Pharmapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usuario\\Desktop\\Pharmapp_taller\\Pharmapp\\Pharmapp\\Pharmapp.csproj",
+        "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\Pharmapp\\Pharmapp.csproj",
         "projectName": "Pharmapp",
-        "projectPath": "C:\\Users\\usuario\\Desktop\\Pharmapp_taller\\Pharmapp\\Pharmapp\\Pharmapp.csproj",
+        "projectPath": "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\Pharmapp\\Pharmapp.csproj",
         "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usuario\\Desktop\\Pharmapp_taller\\Pharmapp\\Pharmapp\\obj\\",
+        "outputPath": "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\Pharmapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,7 +83,11 @@
         "frameworks": {
           "net7.0-windows7.0": {
             "targetAlias": "net7.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\ClassNegocio\\CapaNegocio.csproj": {
+                "projectPath": "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\ClassNegocio\\CapaNegocio.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -58,7 +118,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

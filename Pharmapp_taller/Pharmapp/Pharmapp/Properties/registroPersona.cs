@@ -41,5 +41,10 @@ namespace Pharmapp.Properties
         {
             Application.Exit();
         }
+
+        private void registroPersona_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -13,9 +13,13 @@ namespace Pharmapp.Properties
 {
     public partial class registroInventario : Form
     {
+        IReposInventario repositorioInventario;
+        INegocioInventario negocioInventario;
         public registroInventario()
         {
             InitializeComponent();
+            repositorioInventario = new ReposInventarioF();
+            negocioInventario = new NegocioInventario(repositorioInventario);
         }
 
         private void guardarInBtt_Click(object sender, EventArgs e, MessageBoxButtons messageBoxButtons)
@@ -72,6 +76,16 @@ namespace Pharmapp.Properties
         private void exitBtt_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void dateTime_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void registroInventario_Load(object sender, EventArgs e)
+        {
+
         }
 
         private bool ValidarDatos

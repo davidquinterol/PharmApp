@@ -32,10 +32,10 @@
             pictureBox1 = new PictureBox();
             label1 = new Label();
             ingresoGroup = new GroupBox();
+            pqrsBtt = new Button();
             domisBtt = new Button();
             inventarioBtt = new Button();
             pictureBox2 = new PictureBox();
-            pqrsBtt = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ingresoGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -74,6 +74,17 @@
             ingresoGroup.TabIndex = 1;
             ingresoGroup.TabStop = false;
             // 
+            // pqrsBtt
+            // 
+            pqrsBtt.BackColor = Color.LightBlue;
+            pqrsBtt.Location = new Point(145, 79);
+            pqrsBtt.Name = "pqrsBtt";
+            pqrsBtt.Size = new Size(109, 29);
+            pqrsBtt.TabIndex = 2;
+            pqrsBtt.Text = "PQRS";
+            pqrsBtt.UseVisualStyleBackColor = false;
+            pqrsBtt.Click += pqrsBtt_Click;
+            // 
             // domisBtt
             // 
             domisBtt.BackColor = Color.LightBlue;
@@ -108,17 +119,6 @@
             pictureBox2.TabIndex = 13;
             pictureBox2.TabStop = false;
             // 
-            // pqrsBtt
-            // 
-            pqrsBtt.BackColor = Color.LightBlue;
-            pqrsBtt.Location = new Point(145, 79);
-            pqrsBtt.Name = "pqrsBtt";
-            pqrsBtt.Size = new Size(109, 29);
-            pqrsBtt.TabIndex = 2;
-            pqrsBtt.Text = "PQRS";
-            pqrsBtt.UseVisualStyleBackColor = false;
-            pqrsBtt.Click += pqrsBtt_Click;
-            // 
             // pharmApp
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -131,6 +131,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "pharmApp";
             Text = "PharmApp";
+            Load += pharmApp_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ingresoGroup.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

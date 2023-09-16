@@ -1,11 +1,64 @@
 {
   "version": 3,
   "targets": {
-    "net7.0-windows7.0": {}
+    "net7.0-windows7.0": {
+      "CapaDatos/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "CapaEntidad": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CapaDatos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CapaDatos.dll": {}
+        }
+      },
+      "CapaEntidad/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/CapaEntidad.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CapaEntidad.dll": {}
+        }
+      },
+      "CapaNegocio/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "CapaDatos": "1.0.0",
+          "CapaEntidad": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CapaNegocio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CapaNegocio.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CapaDatos/1.0.0": {
+      "type": "project",
+      "path": "../ClassDatos/CapaDatos.csproj",
+      "msbuildProject": "../ClassDatos/CapaDatos.csproj"
+    },
+    "CapaEntidad/1.0.0": {
+      "type": "project",
+      "path": "../CapaEntidad/CapaEntidad.csproj",
+      "msbuildProject": "../CapaEntidad/CapaEntidad.csproj"
+    },
+    "CapaNegocio/1.0.0": {
+      "type": "project",
+      "path": "../ClassNegocio/CapaNegocio.csproj",
+      "msbuildProject": "../ClassNegocio/CapaNegocio.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0-windows7.0": []
+    "net7.0-windows7.0": [
+      "CapaNegocio >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\usuario\\.nuget\\packages\\": {}
@@ -13,11 +66,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\usuario\\Desktop\\Pharmapp_taller\\Pharmapp\\Pharmapp\\Pharmapp.csproj",
+      "projectUniqueName": "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\Pharmapp\\Pharmapp.csproj",
       "projectName": "Pharmapp",
-      "projectPath": "C:\\Users\\usuario\\Desktop\\Pharmapp_taller\\Pharmapp\\Pharmapp\\Pharmapp.csproj",
+      "projectPath": "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\Pharmapp\\Pharmapp.csproj",
       "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\usuario\\Desktop\\Pharmapp_taller\\Pharmapp\\Pharmapp\\obj\\",
+      "outputPath": "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\Pharmapp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -33,7 +86,11 @@
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\ClassNegocio\\CapaNegocio.csproj": {
+              "projectPath": "C:\\Users\\usuario\\source\\repos\\PharmApp\\Pharmapp_taller\\Pharmapp\\ClassNegocio\\CapaNegocio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -64,7 +121,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

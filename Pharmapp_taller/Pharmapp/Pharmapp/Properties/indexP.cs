@@ -23,5 +23,10 @@ namespace Pharmapp
         {
             Application.Exit();
         }
+
+        private void indexP_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -37,5 +37,10 @@ namespace Pharmapp.Properties
             form.Show();
             Hide();
         }
+
+        private void pharmApp_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

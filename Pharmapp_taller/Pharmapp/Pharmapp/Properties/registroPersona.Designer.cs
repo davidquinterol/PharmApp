@@ -135,6 +135,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "registroPersona";
             Text = "Formulario de Registro ";
+            Load += registroPersona_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
