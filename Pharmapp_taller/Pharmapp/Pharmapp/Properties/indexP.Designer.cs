@@ -107,6 +107,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "indexP";
             Text = "PharmApp";
+            Load += indexP_Load;
             ingresoGroup.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

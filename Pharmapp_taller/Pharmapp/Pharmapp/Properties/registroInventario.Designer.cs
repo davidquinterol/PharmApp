@@ -231,6 +231,7 @@
             dateTime.Name = "dateTime";
             dateTime.Size = new Size(211, 23);
             dateTime.TabIndex = 61;
+            dateTime.ValueChanged += dateTime_ValueChanged;
             // 
             // registroInventario
             // 
@@ -259,10 +260,13 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "registroInventario";
             Text = "Registro de Inventario";
+            Load += registroInventario_Load;
             ((System.ComponentModel.ISupportInitialize)errorProv).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
+
+        private void guardarInBtt_Click(object sender, EventArgs e) => throw new NotImplementedException();
 
         #endregion
         private Label label1;
